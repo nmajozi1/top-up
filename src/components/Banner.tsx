@@ -1,5 +1,5 @@
-import { Box, Typography } from "@material-ui/core"
-import { ComponentWraper, MainWraper, useStyles } from "../Style"
+import { Box } from "@material-ui/core"
+import { BannerComponentWraper, MainWraper, useStyles } from "../Style"
 import CardImage from "./CardImage";
 
 const Banner = () => {
@@ -13,18 +13,13 @@ const Banner = () => {
 
   return (
     <MainWraper>
-      <ComponentWraper>
+      <BannerComponentWraper>
         <Box className={`${classes.container} ${classes.banner}`}>
           {bannerImages.map((image, index) => (
             <CardImage  key={index} name={image.name} path={image.path} />
           ))}
         </Box>
-      </ComponentWraper>
-      {/* <ComponentWraper>
-        <Box className={`${classes.container} ${classes.bannerTextWrapper}`}>
-          <Typography variant="h1">Unlock the Future of Shopping with Our Pre-payment Solution.</Typography>
-        </Box>
-      </ComponentWraper> */}
+      </BannerComponentWraper>
     </MainWraper>
   )
 }

@@ -1,9 +1,9 @@
 import { MainWraper } from "../../Style"
 import Banner from "../../components/Banner"
+import Footer from "../../components/Footer"
 import Nav from "../../components/Nav"
 import Reasons from "../../components/Reasons"
 import Steps from "../../components/Steps"
-// import Start from "../../components/Start"
 
 const Home = () => {
   return (
@@ -11,8 +11,8 @@ const Home = () => {
       <Nav />
       <Banner />
       <Reasons />
-      {/* <Start /> */}
       <Steps />
+      <Footer />
     </MainWraper>
   )
 }
